@@ -48,8 +48,8 @@ const BasePage = function (customAudio = null) {
 
   this.signin = async function() {
     // Read the userName and password
-    let name = process.env.USERNAME || "8006695202";
-    let password = process.env.PASSWORD ||  "Delta999";
+    let name = process.env.USERNAME || "test";
+    let password = process.env.PASSWORD || "test";
 
     await this.driver.sleep(2500);
     const initialLoginClickJsCode = "document.querySelector(`*[slot='globalheader']`).getElementsByClassName('mr-0 mt-2 mb-4 mt-lg-0 mb-lg-0').item(0).firstChild.click();";  
